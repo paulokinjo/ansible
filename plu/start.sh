@@ -5,13 +5,13 @@ docker network create ansible
 
 echo "starting containers"
 echo "acs - ansible controller system"
-docker container run --name acs --network ansible -it -d ubuntu:ansible
+docker container run -d -P --network ansible --name acs ubuntu:ansible
 
 echo "web - web server"
-docker container run --name web --network ansible -it -d centos:ansible
+docker container run -d -P --network ansible --name web centos:ansible
 
 echo "db - db server"
-docker container run --name db --network ansible -it -d centos:ansible
+docker container run -d -P --network ansible --name db centos:ansible
 
 echo "listing containers"
 docker container  ls -a
