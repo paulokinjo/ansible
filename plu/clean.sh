@@ -1,7 +1,7 @@
 #/bin/bash
 
 echo "cleaning up"
-docker container stop acs web db
+docker container stop $(docker container ps -a -q)
 
 echo "prune to remove network"
 docker system prune -f
