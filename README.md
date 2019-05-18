@@ -1,14 +1,20 @@
 # ansible
+
 Plan to be used as a reference for how to use ansible + vagrant
 
-# Commands
-sudo apt install virtualbox -y
-sudo apt install vagrant -y
+# Preparation
 
-mkdir ansible
-cd ansible
+-- Pull the ubuntu trusty image
+docker pull ubuntu:trusty
 
-vagrant init
-vagrant up
+-- Pull centoOS:7 image
+docker pull centos:7
 
-vboxmanage list runningvms
+-- The ansible ubuntu control container
+docker container run -it --name -d control
+
+-- The ansible centOS host container
+docker container run -it --name -d webapp
+
+-- The ansible ubuntu host container
+docker container run -it --name -d database
