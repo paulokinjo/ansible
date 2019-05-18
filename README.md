@@ -19,12 +19,12 @@ Plan to be used as a reference for how to use ansible + vagrant
 </p>
 
 <p>
-    The ansible centOS host container
+    The ansible centOS host container <br>
     <code>docker container run -it --name webapp -d centos:7</code>
 </p>
 
 <p> 
-    The ansible ubuntu host container
+    The ansible ubuntu host container <br>
     <code>docker container run -it --name database -d ubuntu:trusty</code>
 </p>
 
