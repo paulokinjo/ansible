@@ -134,5 +134,6 @@ Plan to be used as a reference for how to use ansible + vagrant
 <p>
 <code>$ apt install ansible </code>
 </p>
+<p>
 <a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html">Reference - Latest Releases via Apt (Debian)</a>
 </p>
