@@ -20,6 +20,7 @@ docker container run -it --name webapp -d centos:7
 docker container run -it --name database -d ubuntu:trusty
 
 <table>
+<caption>SAMPLE RESULT</caption>
     <tr>
         <td>CONTAINER ID</td>
         <td>IMAGE</td>
