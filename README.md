@@ -4,23 +4,29 @@ Plan to be used as a reference for how to use ansible + vagrant
 
 <h1>Preparation</h1>
 <p>
-    Pull the ubuntu trusty image
+    Pull the ubuntu trusty image <br>
     <code>docker pull ubuntu:trusty</code>
 </p>
 
 <p>
-    Pull centoOS:7 image
+    Pull centoOS:7 image <br>
     <code> docker pull centos:7 </code>
 </p>
 
--- The ansible ubuntu control container
-docker container run -it --name control -d ubuntu:trusty
+<p> 
+    The ansible ubuntu control container <br>
+    <code>docker container run -it --name control -d ubuntu:trusty</code>
+</p>
 
--- The ansible centOS host container
-docker container run -it --name webapp -d centos:7
+<p>
+    The ansible centOS host container
+    <code>docker container run -it --name webapp -d centos:7</code>
+</p>
 
--- The ansible ubuntu host container
-docker container run -it --name database -d ubuntu:trusty
+<p> 
+    The ansible ubuntu host container
+    <code>docker container run -it --name database -d ubuntu:trusty</code>
+</p>
 
 <table>
 <caption>SAMPLE RESULT</caption>
