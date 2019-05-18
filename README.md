@@ -3,11 +3,15 @@
 Plan to be used as a reference for how to use ansible + vagrant
 
 <h1>Preparation</h1>
-<p>Pull the ubuntu trusty image</p>
-> docker pull ubuntu:trusty
+<p>
+    Pull the ubuntu trusty image
+    <code>docker pull ubuntu:trusty</code>
+</p>
 
-<p>Pull centoOS:7 image</p>
-<code> docker pull centos:7 </code>
+<p>
+    Pull centoOS:7 image
+    <code> docker pull centos:7 </code>
+</p>
 
 -- The ansible ubuntu control container
 docker container run -it --name control -d ubuntu:trusty
