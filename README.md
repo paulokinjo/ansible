@@ -125,8 +125,10 @@ Plan to be used as a reference for how to use ansible + vagrant
 <h3>Get inside of the container</h3>
 <code>docker container exec -it database /bin/bash
 <h3>Ansible</h3>
-<code>$ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367 </code>
+<code>$ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367 </code> 
+<br>
 <code>$ apt update </code>
+<br>
 <code>$ apt install ansible </code>
-
+<br>
 <a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html">Reference - Latest Releases via Apt (Debian)</a>
