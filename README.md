@@ -92,6 +92,7 @@ Plan to be used as a reference for how to use ansible + vagrant
 </p>
 <p>
 ...
+<pre>
  "Containers": {
     "76b9f272df997f6cf6e328752dfbec8ed56973031435b5213f2e7eaeb796a8ab": {
         "Name": "webapp",
@@ -115,6 +116,7 @@ Plan to be used as a reference for how to use ansible + vagrant
         "IPv6Address": ""
     }
 }
+</pre>
 ...
 
 </p>
