@@ -7,7 +7,7 @@ Plan to be used as a reference for how to use ansible + vagrant
 > docker pull ubuntu:trusty
 
 <p>Pull centoOS:7 image</p>
-> docker pull centos:7
+<code> docker pull centos:7 </code>
 
 -- The ansible ubuntu control container
 docker container run -it --name control -d ubuntu:trusty
