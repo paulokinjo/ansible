@@ -19,7 +19,17 @@ docker container run -it --name webapp -d centos:7
 -- The ansible ubuntu host container
 docker container run -it --name database -d ubuntu:trusty
 
-|| SAMPLE -- RESULT ||
+<table>
+    <tr>
+        <td>CONTAINER ID</td>
+        <td>IMAGE</td>
+        <td>COMMAND</td>
+        <td>CREATED</td>
+        <td>STATUS</td>
+        <td>PORT</td>
+        <td>NAME</td>
+    </tr>
+<table>
 CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
 eddad53af705 ubuntu:trusty "/bin/bash" 6 seconds ago Up 4 seconds database
 76b9f272df99 centos:7 "/bin/bash" 14 seconds ago Up 12 seconds webapp
