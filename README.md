@@ -127,10 +127,12 @@ Plan to be used as a reference for how to use ansible + vagrant
 <h3>Ansible</h3>
 <p>
 <code>$ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367 </code> 
-<br>
+</p>
+<p>
 <code>$ apt update </code>
-<br>
+</p>
+<p>
 <code>$ apt install ansible </code>
-<br>
+</p>
 <a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html">Reference - Latest Releases via Apt (Debian)</a>
 </p>
