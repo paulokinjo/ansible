@@ -29,8 +29,31 @@ docker container run -it --name database -d ubuntu:trusty
         <td>PORT</td>
         <td>NAME</td>
     </tr>
+    <tr>
+        <td>eddad53af705</td>
+        <td>ubuntu:trusty</td>
+        <td>"/bin/bash"</td>
+        <td>6 seconds ago</td>
+        <td>Up 4 seconds</td>
+        <td></td>
+        <td>database</td>
+    </tr>
+    <tr>
+        <td>76b9f272df99</td>
+        <td>centos:7</td>
+        <td>"/bin/bash"</td>
+        <td>14 seconds ago</td>
+        <td>Up 12 seconds</td>
+        <td></td>
+        <td>webapp</td>
+    </tr>
+    <tr>
+        <td>e096ca226cab</td>
+        <td>ubuntu:trusty</td>
+        <td>"/bin/bash"</td>
+        <td>11 seconds ago</td>
+        <td>Up 12 seconds</td>
+        <td></td>
+        <td>control</td>
+    </tr>
 <table>
-CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
-eddad53af705 ubuntu:trusty "/bin/bash" 6 seconds ago Up 4 seconds database
-76b9f272df99 centos:7 "/bin/bash" 14 seconds ago Up 12 seconds webapp
-e096ca226cab ubuntu:trusty "/bin/bash" 11 minutes ago Up 11 minutes control
