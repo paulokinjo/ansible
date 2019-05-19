@@ -138,7 +138,7 @@ Plan to be used as a reference for how to use ansible + vagrant
 <p>
 <a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html">Reference - Latest Releases via Apt (Debian)</a>
 </p>
-<h4>Ansible Control - SSH Configuration</h4>
+<h4>Ansible ubuntu host server - SSH Configuration</h4>
 <p>
 <code>$ apt install vim</code>
 </p>
@@ -158,4 +158,13 @@ Change:
 <code>#PasswordAuthentication yes</code>
 To:
 <code>PasswordAuthentication yes</code>
+</p>
+<p>
+Type:
+ESC - Stops the insertion mode
+:wq - Write and quit vim.
+</p>
+<p>
+<code>$ sudo passwd</code>
+Password123
 </p>
