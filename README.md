@@ -123,8 +123,9 @@ Plan to be used as a reference for how to use ansible + vagrant
 
 <h1>Install ansible in the container</h1>
 <h3>Get inside of the container</h3>
-<code>docker container exec -it database /bin/bash
-<h3>Ansible</h3>
+
+<h3>Ansible Control</h3>
+<code>docker container exec -it control /bin/bash
 <p>
 <code>$ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367 </code> 
 </p>
@@ -136,4 +137,25 @@ Plan to be used as a reference for how to use ansible + vagrant
 </p>
 <p>
 <a href="https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html">Reference - Latest Releases via Apt (Debian)</a>
+</p>
+<h4>Ansible Control - SSH Configuration</h4>
+<p>
+<code>$ apt install vim</code>
+</p>
+<p>
+<code>$ vim /etc/ssh/sshd_config</code>
+Type:
+I - Start insertion mode
+</p>
+<p>
+Change:
+<code>PermitRootLogin without-password</code>
+To:
+<code>PermitRootLogin yes</code>
+</p>
+<p>
+Change:
+<code>#PasswordAuthentication yes</code>
+To:
+<code>PasswordAuthentication yes</code>
 </p>
