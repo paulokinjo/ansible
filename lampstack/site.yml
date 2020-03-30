@@ -7,7 +7,7 @@
 
   roles:
     - common
-    - web
-    - db
-    - php
+    # - web
+    # - db
+    # - php
 ...
