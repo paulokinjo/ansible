@@ -1,0 +1,39 @@
+---
+- hosts: webservers
+  sudo: yes
+
+  tasks:
+  - name: Ensure that Apache is installed
+    apt: 
+      name: apache2
+      state: present
+
+  - name: Start Apache Services
+    service:
+      name: apache2
+      enabled: yes
+      state: started
+
+- hosts: dbservers
+  sudo: yes
+
+  tasks:
+  - name: Ensure MySQL is installed
+    apt: 
+      name: mysql-server
+      state: present
+
+  - name: Start MySQL
+    service:
+      name: mysql
+      state: started
+
+- hosts: webservers:dbservers
+  sudo: yes
+
+  tasks:
+  - name: Stop Firewall Service
+    service:
+      name: ufw
+      state: stopped
+...

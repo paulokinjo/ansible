@@ -4,6 +4,11 @@
     name: apache2
     state: present
 
+- name: install systemd-shim
+  apt:
+    name: systemd-shim
+    state: present
+
 - name: update the apache2 server configuration
   template:
     src: web.conf.j2
