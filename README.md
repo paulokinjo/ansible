@@ -27,7 +27,7 @@ docker container exec -it docker-servers_control_1 /bin/bash
 ```bash
 # Change current directory to the /work dir
 cd /work
-./env/ansible_install.sh
+./docker-servers/env/ansible_install.sh
 ```
 
 [1]:	https://docs.docker.com/get-docker/

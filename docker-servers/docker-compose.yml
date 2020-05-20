@@ -9,7 +9,7 @@ control:
   ports:
     - "2200:22"
   volumes:
-    - ./:/work
+    - ../:/work
 lb01:
   build: ./env
   hostname: lb01
