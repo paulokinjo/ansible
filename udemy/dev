@@ -1,0 +1,16 @@
+[loadbalancer]
+lb01
+
+[webserver]
+app01
+app02
+
+[database]
+db01
+
+[control]
+control 
+
+[all:vars]
+ansible_ssh_user=root
+ansible_ssh_pass=root
