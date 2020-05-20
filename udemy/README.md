@@ -1,26 +1,25 @@
-# ansible
-<h1>List Hosts Examples</h1>
-<p>
-    <code>ansible --list-hosts all</code>
-</p> 
-<p>
-    <code>ansible --list-hosts loadbalancer</code>
-</p> 
-<p>
-    <code>ansible --list-hosts webserver</code>
-</p> 
-<p>
-    <code>ansible --list-hosts app2</code>
-</p> 
-<p>
-    <code>ansible --list-hosts app*</code>
-</p> 
-<p>
-    <code>ansible --list-hosts database,control</code>
-</p> 
-<p>
-    <code>ansible --list-hosts webserver[0]</code>
-</p> 
-<p>
-    <code>ansible --list-hosts \!control</code>
-</p> 
+ANSIBLE
+=================================
+
+### List Hosts Examples
+```bash
+
+ansible --list-hosts all
+
+ansible --list-hosts loadbalancer
+
+ansible --list-hosts webserver
+
+ansible --list-hosts app2
+
+
+ansible --list-hosts app*
+
+ansible --list-hosts database,control
+
+ansible --list-hosts webserver[0]
+
+ansible --list-hosts \!control
+```
+
+[1]:	https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
